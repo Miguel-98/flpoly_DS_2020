@@ -1,0 +1,35 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Week 2: Basics
+```{r}
+#calculate 217 ^ 3
+217^3
+```
+```{r}
+minutes_in_a_year <- 365*24*60
+nums_cups_coffee <- 4
+minutes_in_a_year/nums_cups_coffee
+
+nums_cups_coffee <- 10
+```
+
+##Data Type
+
+```{r}
+favorite_player <- "Lionel Messi"
+```
+
+Data type : Boolean
+
+```{r}
+this_year <- 2020
+last_years <- 2019
+# safety check
+last_years< this_year
+#are they equal?
+last_years!= this_year
+```
+

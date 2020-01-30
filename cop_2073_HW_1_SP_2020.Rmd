@@ -1,0 +1,97 @@
+---
+title: "Introduction to Data Science"
+subtitle: "Homework 1"
+author: "Miguel Amaral - `mamaral7542@floridapoly.edu`"
+output: html_notebook
+---
+
+
+
+# Problem 1 
+
+|Class Name    |   Prefix      |    Number     |         Credits
+|-----------    |  ---------    | -----------   |   --------
+|_Introduction to Data Science_|**COP**|**2073**|3|
+|_Introduction to Business Finance_|**FIN**|**2001**|3|
+|_Legal, Ethical, and Management_|**IDS**|**2144**|3|
+|_Law, Public Policy, and Negotiation in Business_|**BUL**|**2241**|3|
+|_International & Comparative Dimensions of Business_|**GEB**|**3343**|3|
+
+# Problem 2
+
+
+
+## Introduction to Finance
+
+- **Gross Capital Formation** is the amount of outlays on additions to the fixed assets of the economy plus net change in inventories.
+- **Gross domestic product** (GDP) is a measure of the nation’s output of goods and services for a specified period of time. Increases in GDP over time measure the extent of economic growth, one of the nation’s long term economic policy objectives.
+- **Financial assets** include money, debt securities, financial contracts and equity securities that are backed by real assets and/or the earning power of the issuers
+
+Sources: [Investopedia](https://www.investopedia.com/terms/c/capital-formation.asp)
+
+
+
+## International & Comparative Dimensions
+
+- **Nationalization** refers to when a government takes control of a company or industry, which generally occurs without compensation for the loss of the net worth of seized assets and potential income. 
+- **Expropriation** is the act of a government taking privately owned property against the wishes of the owners, ostensibly to be used for the benefit the overall public. 
+- **Confiscation** is a legal form of seizure by a government or other public authority. The word is also used, popularly, of spoliation under legal forms, or of any seizure of property as punishment or in enforcement of the law.
+
+Sources: [Investopedia](https://www.investopedia.com/)
+
+
+# Problem 3
+
+(a) Create a variable called `my_name` that contains your preferred name.
+```{r}
+my_name <- "Miguel"
+```
+
+
+(b) Create a variable called `name_length` that holds how many letters are in `my_name`.
+```{r}
+name_length <- nchar(my_name)
+```
+
+
+(c) Show which value is bigger: $e^\pi$ or $\pi^e$. 
+
+```{r}
+variable1 <- exp(1)^pi
+variable2 <- pi^exp(1)
+
+print(variable1)
+print(variable2)
+
+max(variable1,variable2)
+
+
+```
+Variable 1 e^pi is bigger.
+
+(d) Define a function called `add_tree` that takes a single argument and returns a value 3 times larger than the input.
+```{r}
+add_tree <- function(argument){
+  argument*3
+}
+print(argument)
+```
+
+
+(e) Use the colon operator `:` to create a vector `v` of numbers from 10 to 49. Find the length of this vector using the `length()` function.
+
+```{r}
+v <- 10:49
+length(v)
+print(v)
+```
+
+
+(f) Use the `seq()` function to produce a range of number from -5 to 10 in 0.5 increments.
+```{r}
+range_of_numbers <- seq(-5,10,0.5) 
+print(range_of_numbers)
+```
+ 
+
+
